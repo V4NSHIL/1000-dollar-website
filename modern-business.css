@@ -1,0 +1,131 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+header {
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+}
+
+.masthead video{
+    position: relative;
+    background-size: cover;
+    display: block;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%); 
+}
+
+.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  opacity: 0.;
+  z-index: 0;
+}
+.bg-dark {
+  background-color: #9A192F !important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #9A192F;
+  border-color: #CF202E;
+}
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #9A192F;
+  border-radius: .25rem;
+}
+.card-footer {
+  padding: .75rem 1.25rem;
+  background-color: #9A192F;
+  border-top: 1px solid #CF202E;
+}
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+  background-color: transparent;
+}
+A:link { COLOR: rgb(255, 255, 255); TEXT-DECORATION: none; font-weight: normal }
+A:visited { COLOR: rgb(255, 255, 255); TEXT-DECORATION: none; font-weight: normal }
+A:active { COLOR: rgb(255, 255, 255); TEXT-DECORATION: none }
+A:hover { COLOR: rgb(156, 156, 156); TEXT-DECORATION: none; font-weight: none }
+
+.topBotomBordersOut a:before, .topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #CF202E;
+  content:"";
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.nav-item a {
+  position: relative;
+  z-index: 0;
+}
+
+
