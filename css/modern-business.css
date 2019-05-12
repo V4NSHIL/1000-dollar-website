@@ -7,15 +7,6 @@ body {
   padding-top: 56px;
 }
 
-.carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .portfolio-item {
   margin-bottom: 30px;
@@ -95,53 +86,82 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-A:link { COLOR: rgb(255, 255, 255); TEXT-DECORATION: none; font-weight: normal }
+A:link { COLOR: rgb(0, 68, 253); TEXT-DECORATION: none; font-weight: normal }
 A:visited { COLOR: rgb(255, 255, 255); TEXT-DECORATION: none; font-weight: normal }
 A:active { COLOR: rgb(255, 255, 255); TEXT-DECORATION: none }
 A:hover { COLOR: rgb(156, 156, 156); TEXT-DECORATION: none; font-weight: none }
 
-.topBotomBordersOut a:before, .topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #CF202E;
-  content:"";
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.topBotomBordersOut a:before {
-  top: 0px;
-  transform: translateY(10px);
-}
-.topBotomBordersOut a:after {
-  bottom: 0px;
-  transform: translateY(-10px);
-}
-.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-.nav-item a {
-  position: relative;
-  z-index: 0;
-}
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.wrapper {
+  overflow: hidden;
 }
 
-@media (pointer: coarse) and (hover: none){
+.sliding-background {
+  background: url("../Images/sliding-background-template-3.png") repeat-x;
+  height: 250px;
+  width: 5076px;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+.flex-section-service-blocks .title-col {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 18.75rem;
+}
+.flex-section-service-blocks .content-list-col {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+  letter-spacing: .0437rem;
+}
+.grid-x>.small-12 {
+  width: 100%;
+}
+.grid-x>.small-1, .grid-x>.small-10, .grid-x>.small-11, .grid-x>.small-12, .grid-x>.small-2, .grid-x>.small-3, .grid-x>.small-4, .grid-x>.small-5, .grid-x>.small-6, .grid-x>.small-7, .grid-x>.small-8, .grid-x>.small-9, .grid-x>.small-full, .grid-x>.small-shrink {
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+.cell {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+}
+.grid-x{
+  background-image: url("../Images/MJP-15.jpg");
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+@media (pointer: coarse) and (hover: none) {
   .mobile-resize{
     width: 100%;
   }
